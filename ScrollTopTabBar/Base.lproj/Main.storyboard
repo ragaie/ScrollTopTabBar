@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="262" width="375" height="405"/>
                                 <color key="backgroundColor" red="0.78752843350000001" green="0.39151526819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FpW-2B-LOc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carImage" translatesAutoresizingMaskIntoConstraints="NO" id="FpW-2B-LOc">
                                 <rect key="frame" x="0.0" y="44" width="375" height="218"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FpW-2B-LOc" secondAttribute="height" multiplier="375:218" id="ZMS-42-NJ0"/>
@@ -207,6 +207,6 @@ Below are tips on how to create a good classifieds car ad that sells.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="carImage.jpg" width="700" height="430"/>
+        <image name="carImage" width="350" height="215"/>
     </resources>
 </document>

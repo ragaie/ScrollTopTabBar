@@ -13,7 +13,7 @@ public struct TabBarItem {
     var icon : UIImage!
     var viewItem : UIView!
     
-    init(itemTitle : String,itemIcon : UIImage,itemView : UIView) {
+   public  init(itemTitle : String,itemIcon : UIImage,itemView : UIView) {
         
         title = itemTitle
         icon = itemIcon
