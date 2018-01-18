@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		818BC00B20109DF1004F555B /* carImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 818BC00A20109B2C004F555B /* carImage.jpg */; };
 		818BC00D2010C73A004F555B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818BC00C2010C739004F555B /* ViewController.swift */; };
+		818BC0152010CFCC004F555B /* Screen Shot 2018-01-18 at 2.47.51 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 818BC0122010CF90004F555B /* Screen Shot 2018-01-18 at 2.47.51 PM.png */; };
+		818BC0162010CFCE004F555B /* Screen Shot 2018-01-18 at 2.44.14 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 818BC00E2010CF8F004F555B /* Screen Shot 2018-01-18 at 2.44.14 PM.png */; };
+		818BC0172010CFD1004F555B /* Screen Shot 2018-01-18 at 2.43.08 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 818BC0112010CF90004F555B /* Screen Shot 2018-01-18 at 2.43.08 PM.png */; };
+		818BC0182010CFD3004F555B /* Screen Shot 2018-01-18 at 2.42.56 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 818BC0102010CF90004F555B /* Screen Shot 2018-01-18 at 2.42.56 PM.png */; };
+		818BC0192010CFD5004F555B /* Scroll topTabBar.mov in Resources */ = {isa = PBXBuildFile; fileRef = 818BC0142010CFC9004F555B /* Scroll topTabBar.mov */; };
 		8191AF34200F912600948F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8191AF33200F912600948F9E /* AppDelegate.swift */; };
 		8191AF39200F912600948F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8191AF37200F912600948F9E /* Main.storyboard */; };
 		8191AF3B200F912600948F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8191AF3A200F912600948F9E /* Assets.xcassets */; };
@@ -22,8 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		818BC00A20109B2C004F555B /* carImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carImage.jpg; sourceTree = "<group>"; };
 		818BC00C2010C739004F555B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		818BC00E2010CF8F004F555B /* Screen Shot 2018-01-18 at 2.44.14 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-01-18 at 2.44.14 PM.png"; sourceTree = "<group>"; };
+		818BC0102010CF90004F555B /* Screen Shot 2018-01-18 at 2.42.56 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-01-18 at 2.42.56 PM.png"; sourceTree = "<group>"; };
+		818BC0112010CF90004F555B /* Screen Shot 2018-01-18 at 2.43.08 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-01-18 at 2.43.08 PM.png"; sourceTree = "<group>"; };
+		818BC0122010CF90004F555B /* Screen Shot 2018-01-18 at 2.47.51 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-01-18 at 2.47.51 PM.png"; sourceTree = "<group>"; };
+		818BC0142010CFC9004F555B /* Scroll topTabBar.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Scroll topTabBar.mov"; sourceTree = "<group>"; };
 		8191AF30200F912600948F9E /* ScrollTopTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollTopTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8191AF33200F912600948F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8191AF38200F912600948F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +76,6 @@
 		8191AF32200F912600948F9E /* ScrollTopTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				818BC00A20109B2C004F555B /* carImage.jpg */,
 				8191AF69200FAA7A00948F9E /* screen shot  */,
 				8191AF68200FAA6400948F9E /* support files */,
 				8191AF4F200FA6E800948F9E /* scrollLibrary */,
@@ -105,6 +112,11 @@
 		8191AF69200FAA7A00948F9E /* screen shot  */ = {
 			isa = PBXGroup;
 			children = (
+				818BC0142010CFC9004F555B /* Scroll topTabBar.mov */,
+				818BC0102010CF90004F555B /* Screen Shot 2018-01-18 at 2.42.56 PM.png */,
+				818BC0112010CF90004F555B /* Screen Shot 2018-01-18 at 2.43.08 PM.png */,
+				818BC00E2010CF8F004F555B /* Screen Shot 2018-01-18 at 2.44.14 PM.png */,
+				818BC0122010CF90004F555B /* Screen Shot 2018-01-18 at 2.47.51 PM.png */,
 			);
 			path = "screen shot ";
 			sourceTree = "<group>";
@@ -169,12 +181,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8191AF3E200F912600948F9E /* LaunchScreen.storyboard in Resources */,
+				818BC0182010CFD3004F555B /* Screen Shot 2018-01-18 at 2.42.56 PM.png in Resources */,
+				818BC0152010CFCC004F555B /* Screen Shot 2018-01-18 at 2.47.51 PM.png in Resources */,
 				8191AF3B200F912600948F9E /* Assets.xcassets in Resources */,
 				8191AF67200FA9F700948F9E /* ViewCell.xib in Resources */,
 				8191AF39200F912600948F9E /* Main.storyboard in Resources */,
-				818BC00B20109DF1004F555B /* carImage.jpg in Resources */,
+				818BC0192010CFD5004F555B /* Scroll topTabBar.mov in Resources */,
 				8191AF65200FA9F200948F9E /* ScrollTopTabBar.xib in Resources */,
+				818BC0172010CFD1004F555B /* Screen Shot 2018-01-18 at 2.43.08 PM.png in Resources */,
 				8191AF63200FA9EA00948F9E /* ButtonCell.xib in Resources */,
+				818BC0162010CFCE004F555B /* Screen Shot 2018-01-18 at 2.44.14 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

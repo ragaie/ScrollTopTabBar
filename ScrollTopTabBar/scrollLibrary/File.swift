@@ -23,7 +23,7 @@ public struct TabBarItem {
 
 public enum HeightType {
     case heightLightItem
-    case heightLightBackground
+    case heightLightBackground 
 }
 public extension UIImage {
     func imageWithColor(color: UIColor) -> UIImage {
