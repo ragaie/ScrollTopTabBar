@@ -64,5 +64,4 @@ A step by step series of examples that tell you have to get a development env ru
 
 ## Author
 
-* **Ragaie alfy Fahmey**  - [ragaie alfy](https://github.com/ragaie)
-##[LinkedIn](www.linkedin.com/in/ragaie-alfy)
+* **Ragaie alfy Fahmey**  - [LinkedIn](www.linkedin.com/in/ragaie-alfy)
