@@ -1,7 +1,13 @@
 # ScrollTopTabBar
 scroll tab bar for ios that you just need to add item then it will fit automatic. It give you two way to heightLight selected item.
 
-
+##  Installing
+ Add blow for your pod file 
+   ```
+   pod 'ScrollTopTabBarChtar' 
+   run pod update
+   ```
+ ScrollTopTabBarChtar
 ###Getting Started
 
 A step by step series of examples that tell you have to get a development env running
