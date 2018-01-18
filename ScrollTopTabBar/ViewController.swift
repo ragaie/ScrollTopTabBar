@@ -22,12 +22,30 @@ class ViewController: UIViewController {
         var viewController3 = self.storyboard?.instantiateViewController(withIdentifier: "3")
         var viewController4 = self.storyboard?.instantiateViewController(withIdentifier: "4")
         
-        scrollTapBar.showLineIndecator = false
-        scrollTapBar.dataSource = [
-            TabBarItem.init(itemTitle: "first", itemIcon: UIImage.init(named: "house")!, itemView: (viewController1?.view)!),
-            TabBarItem.init(itemTitle: "secand", itemIcon: UIImage.init(named: "Location")!, itemView: (viewController2?.view)!),
-            TabBarItem.init(itemTitle: "third", itemIcon: UIImage.init(named: "dee")!, itemView: (viewController3?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!),TabBarItem.init(itemTitle: "Forth", itemIcon: UIImage.init(named: "house")!, itemView: (viewController4?.view)!)]
+//         scrollTapBar.showLineIndecator = false
+//         scrollTapBar.barHeight = 50
+//        
+//         scrollTapBar.barBackgroundColor  = UIColor.white
+//         scrollTapBar.selectColor = UIColor.blue
+//        
+//         scrollTapBar.tintItemColor  = UIColor.lightGray
+//         scrollTapBar.textFont = UIFont.systemFont(ofSize: 12)
+//        
+//         scrollTapBar.heightType  = .heightLightItem
+//        
+//      
         
+        
+        
+        
+        
+        
+        scrollTapBar.dataSource = [
+            TabBarItem.init(itemTitle: "Home", itemIcon: UIImage.init(named: "house")!, itemView: (viewController1?.view)!),
+            TabBarItem.init(itemTitle: "Location to get", itemIcon: UIImage.init(named: "Location")!, itemView: (viewController2?.view)!),
+            TabBarItem.init(itemTitle: "Who design it", itemIcon: UIImage.init(named: "design")!, itemView: (viewController3?.view)!),
+            TabBarItem.init(itemTitle: "About", itemIcon: UIImage.init(named: "user")!, itemView: (viewController4?.view)!)]
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -37,5 +55,8 @@ class ViewController: UIViewController {
     }
 
 
+   
+    
+    
 }
 

@@ -85,9 +85,11 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
             
             
             /// rest data for cell
-            cell.backgroundColor = UIColor.clear
-            indecatorLabel.isHidden = true
-            titleLabel.text = ""
+//            cell.backgroundColor = UIColor.clear
+//            indecatorLabel.isHidden = true
+//            titleLabel.text = ""
+//
+            deHeightLightCell(indexPath: indexPath, cell: cell)
             
             /// cell setting 
             titleLabel.textColor = myView.tintItemColor
@@ -105,9 +107,20 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
 
             }
     /////////---> select first item
-            if indexPath.row == 0  && selectIndex == nil{
-                heightLightCell(indexPath: indexPath,cell : cell)
+            
+            if selectIndex == nil {
+                selectIndex = indexPath
+                selectCell = cell
+                
             }
+            if indexPath == selectIndex {
+                
+                heightLightCell(indexPath: indexPath,cell : cell)
+
+            }
+//            if indexPath.row == 0  && selectIndex == nil{
+//                heightLightCell(indexPath: indexPath,cell : cell)
+//            }
             
              return cell
         }
@@ -135,10 +148,10 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
         if collectionView.tag == 11{
             if selectIndex != nil {
                 
-                if   var cell1 = myView.buttomCollectionView.cellForItem(at: selectIndex){
+                //if   var cell1 = myView.buttomCollectionView.cellForItem(at: selectIndex){
                     
-                    deHeightLightCell(indexPath: selectIndex, cell: cell1)
-                }
+                    deHeightLightCell(indexPath: selectIndex, cell: selectCell)
+                //}
             }
             
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
@@ -146,7 +159,7 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
             var cell : UICollectionViewCell! = collectionView.cellForItem(at: indexPath)
             
             heightLightCell(indexPath: indexPath, cell: cell)
-            
+             selectIndex = indexPath
             myView.viewsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
 
         }
@@ -185,8 +198,8 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
  
 
     func heightLightCell(indexPath : IndexPath,cell : UICollectionViewCell)  {
-        selectIndex = indexPath
-
+       
+        selectCell = cell
         //var cell : UICollectionViewCell! = myView.buttomCollectionView.cellForItem(at: indexPath)
 
         let titleLabel = cell.contentView.viewWithTag(11) as! UILabel
@@ -208,7 +221,7 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
             
             
         }
-        if myView.showLineIndecator {
+        if myView.showLineIndecator  {
             indecatorLabel.isHidden = false
             
             indecatorLabel.shakeIndecator()

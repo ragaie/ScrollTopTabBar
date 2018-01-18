@@ -9,10 +9,13 @@
 
 import UIKit
 
- public class ScrollTopTabBar: UIView {
+@IBDesignable  public class ScrollTopTabBar: UIView {
 
     @IBOutlet weak var viewsCollectionView: UICollectionView!
     @IBOutlet weak var buttomCollectionView: UICollectionView!
+    
+    @IBOutlet weak var heightConstrain: NSLayoutConstraint!
+    
 //    
 //    var viewsCollectionView: UICollectionView!
 //    var buttomCollectionView: UICollectionView!
@@ -34,8 +37,13 @@ import UIKit
     
     public var heightType :  HeightType! = .heightLightItem
     public var showLineIndecator : Bool! = true
-    public var barHeight : CGFloat! = 50
 
+   public var barHeight : CGFloat! = 50 {
+        didSet{
+            
+            setCollectionData()
+        }
+    }
     
     
     
@@ -50,7 +58,7 @@ import UIKit
     override public init(frame : CGRect) {
         super.init(frame : frame)
         initSubviews()
-        
+        initActionAndDelegete()
      
     }
     
@@ -78,31 +86,6 @@ import UIKit
         // Make the view stretch with containing view
         // to fit like you want in storyboard
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
-        // nib.contentView.frame = bounds
-
- 
-//
-//        buttomCollectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: 0, width: self.frame.width, height: 50), collectionViewLayout: layout)
-//        buttomCollectionView.tag = 11
-//
-//
-//        viewsCollectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: barHeight, width: self.frame.width, height: self.frame.height - barHeight), collectionViewLayout: layout)
-//
-//
-//        let bundle = Bundle(for: type(of: self))
-//        let cellNib = UINib(nibName: "ButtonCell", bundle: bundle)
-//            buttomCollectionView.register(cellNib, forCellWithReuseIdentifier: "ButtomCellID")
-//        let cellViewNib = UINib(nibName: "ViewCell", bundle: bundle)
-//            viewsCollectionView.register(cellViewNib, forCellWithReuseIdentifier: "ViewCellID")
-//
-//        addSubview(buttomCollectionView)
-//      addSubview(viewsCollectionView)
-//
-        
-//        var tempView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: self.frame.width, height: 200))
-//        tempView.backgroundColor = UIColor.red
-//         addSubview(tempView)
-
         addSubview(view)
         
     }
@@ -138,9 +121,9 @@ import UIKit
         buttomCollectionView.backgroundColor = barBackgroundColor
         buttomCollectionView.delegate = myPresenter
         buttomCollectionView.dataSource = myPresenter
-        var tempFrame =   CGRect.init(x:  0, y:  0, width:  self.frame.width, height: barHeight)
-        buttomCollectionView.frame = tempFrame
-      
+        
+
+
         
 //// collection dataViews
         let cellViewNib = UINib(nibName: "ViewCell", bundle: bundle)
@@ -150,11 +133,16 @@ import UIKit
         viewsCollectionView.delegate = myPresenter
         viewsCollectionView.dataSource = myPresenter
         
+        //update layout in storyBoard
         
+        heightConstrain.constant = barHeight
         
-       var tempFrame2 =   CGRect.init(x:  0, y: barHeight, width:  self.frame.width, height: self.frame.height - barHeight)
-        viewsCollectionView.frame = tempFrame2
-       // buttomCollectionView.reloadData()
+        self.setNeedsDisplay()
+        
     }
+    
+    
+    
+
     
 }
