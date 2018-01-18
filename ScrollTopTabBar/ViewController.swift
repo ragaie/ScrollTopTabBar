@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         var viewController2 = self.storyboard?.instantiateViewController(withIdentifier: "2")
         var viewController3 = self.storyboard?.instantiateViewController(withIdentifier: "3")
         var viewController4 = self.storyboard?.instantiateViewController(withIdentifier: "4")
-
-        
+//
+//        
 //         scrollTapBar.showLineIndecator = false
 //         scrollTapBar.barHeight = 50
 //        

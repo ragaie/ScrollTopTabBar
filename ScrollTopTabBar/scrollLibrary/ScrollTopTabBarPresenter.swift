@@ -28,7 +28,7 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
         
         if  collectionView.tag == 11{
             
-            var tempNsstring = NSString.init(string: myView.dataSource[indexPath.row].title)
+            let tempNsstring = NSString.init(string: myView.dataSource[indexPath.row].title)
             
             
             var calCulateSizze : CGSize! = tempNsstring.size(withAttributes: nil)
@@ -58,8 +58,7 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
         
         
         return CGSize.init(width: collectionView.frame.width, height: collectionView.frame.height)
-        // return [(NSString*)[arrayOfStats objectAtIndex:indexPath.row] sizeWithAttributes:NULL];
-        //return CGSize(width: 80, height: 95)
+     
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -156,7 +155,7 @@ class ScrollTopTabBarPresenter: NSObject,UICollectionViewDelegate,UICollectionVi
             
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             
-            var cell : UICollectionViewCell! = collectionView.cellForItem(at: indexPath)
+            let cell : UICollectionViewCell! = collectionView.cellForItem(at: indexPath)
             
             heightLightCell(indexPath: indexPath, cell: cell)
              selectIndex = indexPath

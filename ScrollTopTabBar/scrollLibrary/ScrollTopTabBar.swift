@@ -53,7 +53,7 @@ import UIKit
     
     //MARK:Variable
     public var dataSource : [TabBarItem]! = []
-    public var itemDataSource : [String] = ["wqeqw","qweqwe","qwewq","wqeqwew","sds","wqeqw","qweqwe","qwewq","wqeqwew","sfsdfsdfsdsdfsdfsdfdsfds"]
+ 
     private var myPresenter : ScrollTopTabBarPresenter!
     override public init(frame : CGRect) {
         super.init(frame : frame)
@@ -79,7 +79,7 @@ import UIKit
 
         let nib = UINib(nibName: "ScrollTopTabBar", bundle: bundle)
 
-        var view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
 
         // to make view fit view in design you welcome.
         view.frame = self.bounds
