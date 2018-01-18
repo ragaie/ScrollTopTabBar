@@ -13,24 +13,25 @@ A step by step series of examples that tell you have to get a development env ru
     @IBOutlet weak var scrollTapBar: ScrollTopTabBar!
 ```
 4- Set dataSource of it that take array form 
+
 ```
-public struct TabBarItem {
-    var title : String!
-    var icon : UIImage!
-    var viewItem : UIView!
-    
-    init(itemTitle : String,itemIcon : UIImage,itemView : UIView) {
-        
-        title = itemTitle
-        icon = itemIcon
-        viewItem = itemView
-    }
-}
+        public struct TabBarItem {
+            var title : String!
+            var icon : UIImage!
+            var viewItem : UIView!
+
+            init(itemTitle : String,itemIcon : UIImage,itemView : UIView) {
+
+                title = itemTitle
+                icon = itemIcon
+                viewItem = itemView
+            }
+        }
 
 
-scrollTapBar.dataSource = [
-            TabBarItem.init(itemTitle: "Home", itemIcon: UIImage.init(named: "house")!, itemView: (viewController1?.view)!)]
-            
+        scrollTapBar.dataSource = [
+                    TabBarItem.init(itemTitle: "Home", itemIcon: UIImage.init(named: "house")!, itemView: (viewController1?.view)!)]
+
 ```
 
 ## Propety that you can change it in it 
