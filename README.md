@@ -7,14 +7,17 @@ scroll tab bar for ios that you just need to add item then it will fit automatic
    pod 'ScrollTopTabBarChtar' 
    run pod update
    ```
- ScrollTopTabBarChtar
+ 
 ###Getting Started
 
 A step by step series of examples that tell you have to get a development env running
 
 1- drag UIView in storyBoard
+
 2- set it is class to  (ScrollTopTabBar)
+
 3- create IBOutlet from it 
+
 ```
     @IBOutlet weak var scrollTapBar: ScrollTopTabBar!
 ```
