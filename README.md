@@ -18,7 +18,7 @@ A step by step series of examples that tell you have to get a development env ru
 ```
     @IBOutlet weak var scrollTapBar: ScrollTopTabBar!
 ```
-4- Set dataSource of it that take array form 
+4- Set dataSource of it that take array form  TabBarItem
 
 ```
         public struct TabBarItem {
@@ -42,17 +42,33 @@ A step by step series of examples that tell you have to get a development env ru
 
 ## Propety that you can change it in it 
 
+1- for remove line indecator in selected item 
   ```
          scrollTapBar.showLineIndecator = false
+   ```
+2- Change hight of tabBar 
+```
          scrollTapBar.barHeight = 50
+```
+3- change background color 
+```
          scrollTapBar.barBackgroundColor  = UIColor.lightGray
+```
+4- change color of hightLight selected item 
+```
          scrollTapBar.selectColor = UIColor.brown
+```
+5- change tint color of items in tab bar 
+```
          scrollTapBar.tintItemColor  = UIColor.green
+```
+6- change item text font 
+```
          scrollTapBar.textFont = UIFont.systemFont(ofSize: 12)
+```
+7- you have to option in heightlight selected item (.heightLightItem, heightLightBackground) you can set it by enum (HeightType)
          scrollTapBar.heightType  = HeightType.heightLightBackground  
-         
-         //last one refer to selection type that sould be one of 
-         
+ ```       
          public enum HeightType {
             case heightLightItem
             case heightLightBackground 
